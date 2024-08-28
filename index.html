@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de Texto</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="./main.js"></script>
 </head>
 
 <body>
@@ -23,15 +24,19 @@
         <section class="presentacion__contenido__cajastexto">
             
             <div class="presentacion__contenido__cajastexto__leftsection">
+
+                
                 <input type="text" class="presentacion-input-text" placeholder="Ingrese el texto aquí">
 
-                <p class="texto__leyenda__minusculas">🔒 Solo letras minúsculas y sin acentos</p>
+                <div class="conjunto__inferior__izquierdo">
+                    <p class="texto__leyenda__minusculas"> 🔒 Solo letras minúsculas y sin acentos</p>
 
-                <div class="presentacion__contenido__cajastexto__leftsection__button group">
-                    <button class="presentacion__botones">Encriptar</button>
-                    <button class="presentacion__botones">Desencriptar</button>
+                    <div class="presentacion__contenido__cajastexto__leftsection__button group">
+                        <button class="presentacion__botones" onclick="encriptarTexto()">Encriptar</button>
+                        <button class="presentacion__botones" onclick="desencriptarTexto()">Desencriptar</button>
+                    </div>
                 </div>
-            </div>
+            </div>    
 
             <div class="presentacion__contenido__cajastexto__rightsection">
                 <!-- Imagen inicial -->
@@ -58,7 +63,7 @@
     <footer class="footer">
         <p>Desarrollado por Brenda Navarro</p>
     </footer>
+
+    <script src="./scripts/main.js"></script>
 </body>
-
-
 </html>
