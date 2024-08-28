@@ -38,5 +38,5 @@ Para ejecutar este proyecto localmente, sigue los siguientes pasos:
 
 1. Clona este repositorio en tu máquina local.
    ```bash
-   git clone https://github.com/tuusuario/encriptador-texto.git
+   git clone https://github.com/brenda/encriptador-texto.git](https://github.com/brendap21/EncriptadorTexto.git
 ****
