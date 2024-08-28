@@ -2,18 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
- :root{
+:root {
     --color-primario: #609ED4;
-    --color-secundario: #356EA9; 
-    --color-terciario: #0A3871; 
+    --color-secundario: #356EA9;
+    --color-terciario: #0A3871;
     --color-cuaternario: #072B61;
     --color-quinteario: #052051;
     --color-hover: #31363F;
 
-    --dark-blue-100:#609ED4;
-    --dark-blue-200: #356EA9; 
-    --dark-blue-300: #0A3871; 
-    --dark-blue-400:  #072B61;
+    --dark-blue-100: #609ED4;
+    --dark-blue-200: #356EA9;
+    --dark-blue-300: #0A3871;
+    --dark-blue-400: #072B61;
     --dark-blue-500: #052051;
 
     --light-blue-100: #F3F5FC;
@@ -35,89 +35,112 @@
 
 * {
     padding: 0;
-    margin:0;
+    margin: 0;
 }
 
-body{
+body {
     box-sizing: border-box;
-    background-color: var(--color-primario);
-    color: var(--color-secundario);
+    background-color: var(--light-blue-100);
+    color: var(--dark-blue-300);
 }
 
-.presentacion__titulo{
-    font-size: 2.25rem;
-    font-family: var(--fuente-krona)
+.presentacion__logo {
+    width: 20%;
 }
 
-.presentacion__contenido{
-    width: 50%;
-    padding: 5% 5%;
+.presentacion__titulo {
+    padding: 2% 10%;
+    font-size: 2.5rem;
+    font-family: var(--fuente-krona);
+}
+
+.presentacion__contenido {
+    padding: 2%;
     display: flex;
-    justify-content: space-between;
-    gap: 40px;
     flex-direction: column;
 }
 
-.presentacion__contenido__cajastexto{
-    padding: 20%;
+.presentacion__contenido__cajastexto {
+    padding: 2% 10%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 82px;
 }
 
-.presentacion__contenido__cajastexto__leftsection{
-    align-items: left;
+.presentacion__contenido__cajastexto__leftsection {
+    align-items: stretch;
     padding: 20px;
 
 }
 
-.presentacion__contenido__cajastexto__leftsection__button group{
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-.presentacion__contenido__cajastexto__rightsection{
-    padding: 0% 40%;
-
-}
-
-
-
-.presentacion-input-text{
+.presentacion__contenido__texto {
     font-size: 1.5rem;
     font-family: var(--fuente-inter);
 }
 
-
-
-.presentacion__botones{
-      border: 2px solid var(--color-terciario);
-      width: 378px;
-      text-align: center;
-      border-radius: 8px;
-      width: 50%;
-      font-size: 1.5rem;
-      font-weight: 600;
-      padding: 21.5px 0;
-      text-decoration: none;
-      color: var(--color-secundario);
-      font-family: var(--fuente-montserrat);
-      display: flex;
-      justify-content: center;
-      gap: 10px;
+.presentacion__contenido__texto__resaltado{
+    font-size: 1.5rem;
+    font-family: var(--fuente-inter);
+    font-weight: 336;
+    color: var(--gray-500);
 }
 
-.presentacion__enlaces__link:hover{
-    background-color: var(--color-hover);
+.texto__leyenda__minusculas {
+    font-family: var(--fuente-inter);
+    font-size: 1.1rem;
+    font-weight: 229;
 }
 
-.presentacion__logo{
+.presentacion__contenido__cajastexto__leftsection__button group {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.presentacion__contenido__cajastexto__rightsection {
+    display: flex;
+    flex-direction: column;
+}
+
+.illustrationNotFound{
     width: 50%;
 }
 
-.footer{
+
+.presentacion-input-text {
+    font-size: 2rem;
+    font-family: var(--fuente-inter);
+    font-weight: 577;
+
+}
+
+
+
+.presentacion__botones {
+    border: 2px solid var(--dark-blue-300);
+    width: 328px;
+    text-align: center;
+    border-radius: 24px;
+    width: 50%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
     text-decoration: none;
-    background-color: var(--color-terciario);
+    color: var(--color-secundario);
+    font-family: var(--fuente-montserrat);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.presentacion__enlaces__link:hover {
+    background-color: var(--color-hover);
+}
+
+.footer {
+    text-decoration: none;
+    background-color: var(--dark-blue-500);
     padding: 24px;
     color: var(--color-primario);
     text-align: center;
@@ -126,21 +149,21 @@ body{
     font-weight: 400;
 }
 
-@media (max-width: 1200px ) {
-    .header{
+@media (max-width: 1200px) {
+    .header {
         padding: 10%;
     }
 
-    .header__menu{
+    .header__menu {
         justify-content: center;
     }
 
-    .presentacion{
+    .presentacion {
         flex-direction: column-reverse;
         padding: 5%;
     }
 
-    .presentacion__contenido{
+    .presentacion__contenido {
         width: auto;
     }
 }

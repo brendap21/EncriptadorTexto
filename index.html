@@ -25,7 +25,7 @@
             <div class="presentacion__contenido__cajastexto__leftsection">
                 <input type="text" class="presentacion-input-text" placeholder="Ingrese el texto aquí">
 
-                <p class="note">🔒 Solo letras minúsculas y sin acentos</p>
+                <p class="texto__leyenda__minusculas">🔒 Solo letras minúsculas y sin acentos</p>
 
                 <div class="presentacion__contenido__cajastexto__leftsection__button group">
                     <button class="presentacion__botones">Encriptar</button>
@@ -34,10 +34,22 @@
             </div>
 
             <div class="presentacion__contenido__cajastexto__rightsection">
-                <img src="illustration.png" alt="Ilustración" class="illustration">
-                <p class="no-message">Ningún mensaje fue encontrado</p>
-                <p class="no-message">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <!-- Imagen inicial -->
+                <img src="./assets/Muñeco.png" alt="illustrationNotFound" class="illustrationNotFound" id="illustrationNotFound">
+
+                <!-- Mensaje inicial -->
+                <div class="no-message" id="no-message">
+                    <p class="presentacion__contenido__texto__resaltado">Ningún mensaje fue encontrado</p>
+                    <p class="presentacion__contenido__texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+
+                <!-- Caja de texto para el resultado, inicialmente oculta -->
+                <div class="result-box" id="result-box" style="display: none;">
+                    <p id="result-text"></p>
+                    <button class="presentacion__botones" onclick="copiarTexto()">Copiar</button>
+                </div>
             </div>
+
 
         </section>
 
