@@ -27,6 +27,8 @@
     --gray-400: #495057;
     --gray-500: #343A40;
 
+    --white: #FFFFFF;
+
     --fuente-montserrat: 'Montserrat', sans-serif;
     --fuente-krona: 'Krona One', sans-serif;
     --fuente-inter: 'Inter', sans-serif;
@@ -45,10 +47,11 @@ body {
 
 .presentacion__logo {
     width: 20%;
+    padding: 2% 1%;
 }
 
 .presentacion__titulo {
-    padding: 2% 10%;
+    padding: 2% 7%;
     font-size: 2.5rem;
     font-family: var(--fuente-krona);
 }
@@ -60,83 +63,143 @@ body {
 }
 
 .presentacion__contenido__cajastexto {
-    padding: 2% 10%;
+    padding: 2% 0% 0% 7%;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 20px;
+    gap: 5%;
 }
 
 .presentacion__contenido__cajastexto__leftsection {
-    padding: 2% 10%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+    gap: 5%;
 }
 
 .presentacion__contenido__texto {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: var(--fuente-inter);
+    text-align: center;
+    gap: 1rem;
+    
 }
 
 .presentacion__contenido__texto__resaltado {
     font-size: 1.5rem;
     font-family: var(--fuente-inter);
-    font-weight: 336;
+    font-weight: bold;
     color: var(--gray-500);
+    text-align: center;
+
 }
 
 .texto__leyenda__minusculas {
     font-family: var(--fuente-inter);
     font-size: 1.1rem;
-    font-weight: 229;
+    color: var(--gray-500);
 }
 
 .presentacion__contenido__cajastexto__leftsection__button.group {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 5%;
 }
 
 .presentacion__contenido__cajastexto__rightsection {
     display: flex;
     flex-direction: column;
+    background-color: var(--white);
+    border-radius: 32px;
+    padding: 5%;
+    align-items: center;
+    width: 30%;
+    height: 900px;
+    
 }
 
 .illustrationNotFound {
-    width: 50%;
+    width: 100%;
+    gap: 2rem;
 }
 
 .conjunto__inferior__izquierdo{
     display: flex;
     flex-direction: column;
-    padding: 0px 10px;
-
+    padding: 18px;
 }
 
 .presentacion-input-text {
     font-size: 2rem;
     font-family: var(--fuente-inter);
-    padding: 15px;
-    font-weight: 577;
+    padding: 20px;
     border: none;
     color: var(--dark-blue-300);
-    width: auto;
-    height: auto; 
-    background-color: var(--light-blue-100); 
-    text-align: left;
+    width: 100%;
+    height: 350px;
+    background-color: var(--light-blue-100);
+    resize: none;
+    overflow-y: auto;
+    box-sizing: border-box;
 }
 
-.presentacion__botones {
-    border: 2px solid var(--dark-blue-300);
+.presentacion-input-text::placeholder {
+    color: var(--dark-blue-300); 
+    font-size: 2rem; 
+    font-family: var(--fuente-inter); 
+}
+
+.presentacion__boton__encriptar{
     text-align: center;
     border-radius: 24px;
     width: 50%;
     font-size: 1.5rem;
-    font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none;
-    color: var(--color-secundario);
-    font-family: var(--fuente-montserrat);
+    background-color: var(--dark-blue-300);
+    font-family: var(--fuente-inter);
     display: flex;
     justify-content: center;
     gap: 10px;
+    color: var(--white);
+    border: none;
+}
+
+
+.presentacion__boton__desencriptar{
+    text-align: center;
+    border-radius: 24px;
+    width: 50%;
+    font-size: 1.5rem;
+    padding: 21.5px;
+    text-decoration: none;
+    background-color: var(--light-blue-300);
+    font-family: var(--fuente-inter);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-color: var(--dark-blue-300);
+    border-style: solid;
+    color: var(--dark-blue-400);
+}
+
+.presentacion__boton__copiar{
+    text-align: center;
+    border-radius: 24px;
+    width: 50%;
+    font-size: 1.5rem;
+    padding: 21.5px;
+    text-decoration: none;
+    background-color: var(--white);
+    font-family: var(--fuente-inter);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-color: var(--dark-blue-300);
+    border-style: solid;
+    color: var(--dark-blue-400);
 }
 
 .presentacion__enlaces__link:hover {

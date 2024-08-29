@@ -11,47 +11,50 @@
 
 <body>
 
+    <div class="presentacion__logo">
+        <img src="./assets/Logo.png" alt="Logotipo">
+    </div>
+
+    <h1 class="presentacion__titulo">
+        ENCRIPTADOR DE TEXTO
+    </h1>
+
     <main class="presentacion__contenido">
 
-        <div class="presentacion__logo">
-            <img src="./assets/Logo.png" alt="Logotipo">
-        </div>
-      
-        <h1 class="presentacion__titulo">
-            ENCRIPTADOR DE TEXTO
-        </h1>
-
         <section class="presentacion__contenido__cajastexto">
-            
+
             <div class="presentacion__contenido__cajastexto__leftsection">
 
-                
-                <input type="text" class="presentacion-input-text" placeholder="Ingrese el texto aquí">
+                <textarea class="presentacion-input-text"
+                    placeholder="Ingrese el texto que deseas encriptar o desencriptar aquí."></textarea>
+
 
                 <div class="conjunto__inferior__izquierdo">
                     <p class="texto__leyenda__minusculas"> 🔒 Solo letras minúsculas y sin acentos</p>
 
                     <div class="presentacion__contenido__cajastexto__leftsection__button group">
-                        <button class="presentacion__botones" onclick="encriptarTexto()">Encriptar</button>
-                        <button class="presentacion__botones" onclick="desencriptarTexto()">Desencriptar</button>
+                        <button class="presentacion__boton__encriptar" onclick="encriptarTexto()">Encriptar</button>
+                        <button class="presentacion__boton__desencriptar"
+                            onclick="desencriptarTexto()">Desencriptar</button>
                     </div>
                 </div>
-            </div>    
+            </div>
 
             <div class="presentacion__contenido__cajastexto__rightsection">
                 <!-- Imagen inicial -->
-                <img src="./assets/Muñeco.png" alt="illustrationNotFound" class="illustrationNotFound" id="illustrationNotFound">
+                <img src="./assets/Muñeco.png" alt="illustrationNotFound" class="illustrationNotFound"
+                    id="illustrationNotFound">
 
                 <!-- Mensaje inicial -->
                 <div class="no-message" id="no-message">
-                    <p class="presentacion__contenido__texto__resaltado">Ningún mensaje fue encontrado</p>
+                    <p class="presentacion__contenido__texto__resaltado">Ningún mensaje fue encontrado.</p>
                     <p class="presentacion__contenido__texto">Ingresa el texto que desees encriptar o desencriptar.</p>
                 </div>
 
                 <!-- Caja de texto para el resultado, inicialmente oculta -->
                 <div class="result-box" id="result-box" style="display: none;">
                     <p id="result-text"></p>
-                    <button class="presentacion__botones" onclick="copiarTexto()">Copiar</button>
+                    <button class="presentacion__boton__copiar" onclick="copiarTexto()">Copiar</button>
                 </div>
             </div>
 
@@ -59,11 +62,12 @@
         </section>
 
     </main>
-    
+
     <footer class="footer">
         <p>Desarrollado por Brenda Navarro</p>
     </footer>
 
     <script src="./scripts/main.js"></script>
 </body>
+
 </html>
