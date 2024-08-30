@@ -7,30 +7,30 @@
     <title>Encriptador de Texto</title>
     <link rel="stylesheet" href="./styles/style.css">
     <script src="./main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
 
-    <div class="presentacion__logo">
-        <img src="./assets/Logo.png" alt="Logotipo">
-    </div>
-
-    <h1 class="presentacion__titulo">
-        ENCRIPTADOR DE TEXTO
-    </h1>
-
     <main class="presentacion__contenido">
 
-        <section class="presentacion__contenido__cajastexto">
+        <div class="seccion_izquierda">
+
+            <div class="seccion__titulo__logo">
+                <div class="presentacion__logo">
+                    <img src="./assets/Logo.png" alt="Logotipo">
+                </div>
+
+                <h1 class="presentacion__titulo">
+                    ENCRIPTADOR DE TEXTO
+                </h1>
+            </div>
 
             <div class="presentacion__contenido__cajastexto__leftsection">
-
-                <textarea class="presentacion-input-text"
-                    placeholder="Ingrese el texto que deseas encriptar o desencriptar aquí."></textarea>
-
+                <textarea class="presentacion-input-text" placeholder="Ingrese el texto que deseas encriptar o desencriptar aquí."></textarea>
 
                 <div class="conjunto__inferior__izquierdo">
-                    <p class="texto__leyenda__minusculas"> 🔒 Solo letras minúsculas y sin acentos</p>
+                    <p class="texto__leyenda__minusculas"> <i class="fas fa-info-circle"></i> Solo letras minúsculas y sin acentos.</p>
 
                     <div class="presentacion__contenido__cajastexto__leftsection__button group">
                         <button class="presentacion__boton__encriptar" onclick="encriptarTexto()">Encriptar</button>
@@ -39,6 +39,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="seccion_derecha">
 
             <div class="presentacion__contenido__cajastexto__rightsection">
                 <!-- Imagen inicial -->
@@ -48,18 +51,17 @@
                 <!-- Mensaje inicial -->
                 <div class="no-message" id="no-message">
                     <p class="presentacion__contenido__texto__resaltado">Ningún mensaje fue encontrado.</p>
-                    <p class="presentacion__contenido__texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <p class="presentacion__contenido__texto__desencriptar">Ingresa el texto que desees encriptar o desencriptar.</p>
                 </div>
 
                 <!-- Caja de texto para el resultado, inicialmente oculta -->
                 <div class="result-box" id="result-box" style="display: none;">
-                    <p id="result-text"></p>
+                    <p class="presentacion__texto">El texto ingresado encriptado es el siguiente:</p>
+                    <textarea id="result-text"></textarea>
                     <button class="presentacion__boton__copiar" onclick="copiarTexto()">Copiar</button>
                 </div>
             </div>
-
-
-        </section>
+        </div>
 
     </main>
 
